@@ -1,0 +1,20 @@
+/* Style untuk Form Tambah Karyawan */
+#formTambahKaryawan {
+    max-width: 600px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#formTambahKaryawan .form-group label {
+    font-weight: 600;
+}
+
+#formTambahKaryawan .form-control {
+    border-radius: 4px;
+}
+
+#formTambahKaryawan button {
+    margin-top: 10px;
+}

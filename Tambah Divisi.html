@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tambah Karyawan</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles-form.css">
+    <!-- Pastikan styles.css tersedia jika ada custom CSS -->
+</head>
+
+<body>
+
+    <div class="container mt-4">
+        <h4>Tambah Divisi</h4>
+        <form id="formTambahDivisi">
+            <div class="form-group mb-3">
+                <label for="kodeDivisi">Kode Divisi</label>
+                <input type="text" class="form-control" id="kodeDivisi" placeholder="Masukkan kode divisi">
+            </div>
+            <div class="form-group mb-3">
+                <label for="IDKaryawan">ID Karyawan</label>
+                <input type="text" class="form-control" id="IDKaryawan" placeholder="Masukkan ID karyawan">
+            </div>
+            <div class="form-group mb-3">
+                <label for="namaKaryawan">Nama Karyawan</label>
+                <input type="text" class="form-control" id="namaKaryawan" placeholder="Masukkan nama karyawan">
+            </div>
+            <div class="form-group mb-3">
+                <label for="DivisiKaryawan">Divisi</label>
+                <select class="form-control" id="DivisiKaryawan">
+                    <option value="">Pilih Divisi</option>
+                    <option value="Umum">Umum</option>
+                    <option value="BAUK">BAUK</option>
+                    <option value="BAA">BAA</option>
+                    <option value="IT">IT</option>
+                    <option value="OB">OB</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Simpan</button>
+            <a href="divisi.html" class="btn btn-secondary">Kembali</a>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Sistem Informasi Manajemen Karyawan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <!-- Link to External CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Pastikan path-nya benar -->
+</head>
+
+<body>
+    <div class="d-flex">
+        <!-- Sidebar -->
+        <div class="sidebar p-3">
+            <!-- Logo Perusahaan -->
+            <img src="logo.png" alt="Logo Perusahaan" class="logo" height="100" width="100">
+            <p class="text-center">Welcome, Fajar Sidiq Wijaya<br><small>Administrator</small></p>
+            <hr>
+
+            <!-- Menu dasboard -->
+
+            <!-- Menu Karyawan -->
+            <h6 class="text-muted">MENU KARYAWAN</h6>
+            <ul class="nav flex-column">
+                <li class="nav-item"><a href="Si-karyawan.html" class="nav-link"><i
+                            class="fas fa-tachometer-alt mr-2"></i> Dashboard</a>
+                </li>
+                <li class="nav-item"><a href="karyawan.html" class="nav-link"><i class="fas fa-user"></i>
+                        Karyawan</a>
+                </li>
+                <li class="nav-item"><a href="jabatan.html" class="nav-link"><i class="fas fa-briefcase"></i>
+                        Jabatan</a></li>
+                <li class="nav-item"><a href="divisi.html" class="nav-link"><i class="fas fa-building"></i> Divisi</a>
+                </li>
+            </ul>
+            <hr>
+            <!-- Menu Absensi -->
+            <h6 class="text-muted">MENU ABSENSI</h6>
+            <ul class="nav flex-column">
+                <li class="nav-item"><a href="absensi.html" class="nav-link"><i class="fas fa-calendar-alt"></i>
+                        Absensi</a></li>
+                <li class="nav-item"><a href="cuti.html" class="sidebar-active"><i class="fas fa-umbrella-beach"></i>
+                        Cuti</a>
+                </li>
+                <li class="nav-item"><a href="lembur.html" class="nav-link"><i class="fas fa-clock"></i> Lembur</a></li>
+            </ul>
+            <hr>
+            <!-- Menu Penggajian -->
+            <h6 class="text-muted">MENU PENGGAJIAN</h6>
+            <ul class="nav flex-column">
+                <li class="nav-item"><a href="gaji.html" class="nav-link"><i class="fas fa-money-bill-wave"></i> Slip
+                        Gaji</a></li>
+                <li class="nav-item"><a href="cetak-slip-gaji.html" class="nav-link"><i class="fas fa-file-alt"></i>
+                        Cetak Slip Gaji</a></li>
+            </ul>
+            <hr>
+            <!-- Menu Laporan -->
+            <h6 class="text-muted">MENU LAPORAN</h6>
+            <ul class="nav flex-column">
+                <li class="nav-item"><a href="cetak-laporan.html" class="nav-link"><i class="fas fa-chart-line"></i>
+                        Cetak Laporan</a></li>
+            </ul>
+            <hr>
+            <!-- Menu Admin -->
+            <h6 class="text-muted">MENU ADMIN</h6>
+            <ul class="nav flex-column">
+                <li class="nav-item"><a href="pengguna.html" class="nav-link"><i class="fas fa-users"></i> Pengguna</a>
+                </li>
+            </ul>
+            <!-- Logout Button -->
+            <div class="logout-button text-center mt-3">
+                <a href=" logout.html" class="btn btn-primary btn-block"><i class="fas fa-sign-out-alt"></i> Logout</a>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="flex-1">
+            <div class="bg-blue-700 text-white p-4 flex">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+        <!-- Menu dasboard -->
+        <div class="container mt-4" style="margin-left: -50px;">
+            <div class="dashboard-header">
+                <h4>Data Karyawan</h4>
+            </div>
+            <div class="row mt-4">
+                <div class="row mt-4" style="margin-left: 30px;"></div>
+                <label for="entries" class="mr-2">Show</label>
+                <select id="entries" class="border-gray-300 rounded">
+                    <option value="10">10</option>
+                    <option value="25">25</option>
+                    <option value="50">50</option>
+                </select>
+                <span class="ml-2">entries</span>
+            </div>
+            <div class="row mt-4">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Nama</th>
+                            <th>Izin</th>
+                            <th>Jam</th>
+                            <th>Tanggal</th>
+                            <th>Keterangan</th>
+                            <th>Status</th>
+                            <th>Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Syamsul Sulaiman</td>
+                            <td>Cuti</td>
+                            <td>06:00</td>
+                            <td>2024-07-18</td>
+                            <td>Acara Keluarga</td>
+                            <td>Menunggu Konfirmasi</td>
+                            <td>
+                                <a href="#" class="btn btn-info btn-sm"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="btn btn-primary btn-sm"><i class="fas fa-edit"></i></a>
+                                <a href="#" class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></a>
+                            </td>
+                        </tr>
+                        <!-- Tambahkan baris lain sesuai kebutuhan -->
+                    </tbody>
+                </table>
+            </div>
+
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

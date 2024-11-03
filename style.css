@@ -1,0 +1,128 @@
+/* Sidebar Styling */
+
+.sidebar {
+    height: 200vh;
+    position: flex;
+    width: 300px;
+    background-color: #343a40;
+    color: #fff;
+    padding-top: 20px;
+}
+
+.sidebar .logo {
+    display: block;
+    width: 80px;
+    height: auto;
+    margin: 0 auto 20px;
+}
+
+.sidebar a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    font-size: 1rem;
+}
+
+.sidebar a:hover {
+    background-color: #545a60;
+    color: #fff;
+}
+
+.sidebar-active {
+    background-color: #545a60;
+    color: #fff;
+}
+
+.logout-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    display: block;
+    margin: 20px auto 0;
+    width: 80%;
+}
+
+
+/* Dashboard Header */
+
+.dashboard-header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+
+/* Card Styling */
+
+.card {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-icon {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.card-data {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.card-label {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+
+/* Card Style */
+
+.card-icon {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.card-data {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.card-label {
+    font-size: 0.9rem;
+    color: #f8f9fa;
+}
+
+
+/* Table Style */
+
+.table {
+    border: 10px solid #dee2e6;
+}
+
+.table th,
+.table td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.bg-primary {
+    background-color: #007bff !important;
+}
+
+.bg-success {
+    background-color: #28a745 !important;
+}
+
+.bg-info {
+    background-color: #17a2b8 !important;
+}
+
+.bg-warning {
+    background-color: #ffc107 !important;
+}

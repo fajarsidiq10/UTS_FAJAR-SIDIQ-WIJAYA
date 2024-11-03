@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tambah Karyawan</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles-form.css">
+    <!-- Pastikan styles.css tersedia jika ada custom CSS -->
+</head>
+
+<body>
+
+    <div class="container mt-4">
+        <h4>Tambah Karyawan</h4>
+        <form id="formTambahKaryawan">
+            <div class="form-group mb-3">
+                <label for="kodeKaryawan">ID Karyawan</label>
+                <input type="text" class="form-control" id="IDKaryawan" placeholder="Masukkan ID karyawan">
+            </div>
+            <div class="form-group mb-3">
+                <label for="namaKaryawan">Nama Karyawan</label>
+                <input type="text" class="form-control" id="namaKaryawan" placeholder="Masukkan nama karyawan">
+            </div>
+            <div class="form-group mb-3">
+                <label for="emailKaryawan">Email</label>
+                <input type="email" class="form-control" id="emailKaryawan" placeholder="Masukkan email karyawan">
+            </div>
+            <div class="form-group mb-3">
+                <label for="alamatKaryawan">Alamat</label>
+                <textarea class="form-control" id="alamatKaryawan" rows="3" placeholder="Masukkan alamat karyawan"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Simpan</button>
+            <a href="karyawan.html" class="btn btn-secondary">Kembali</a>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
